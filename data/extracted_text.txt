@@ -1,0 +1,39 @@
+Instructions for the Intern
+
+We need to automate the extraction of data from patient assessment forms and integrate it into a SQL
+database. This task will involve using Optical Character Recognition (OCR) to parse image files (JPEG or
+PDF), extract structured and unstructured cata, and store it in a database in JSON format.
+
+Intern Assignment Overview
+
+1. Develop a Python-based OCR Script
+a. Extract text from patient assessment forms (handwritten and printed).
+b. Identify and extract key data points.
+c. Convert the extracted data into a structured JSON format.
+2. Store Extracted Data in a SQL Database
+a. Design a database schema.
+b. Insert JSON data into relevant tables.
+3. Provide a Public GitHub Repository
+a. Include all code, documentation, and setup instructions.
+
+Step-by-Step Instructions
+1. Data Extraction Using OCR
+
+e Use Tesseract OCR or EasyOCR for text recognition.
+e Ensure handwritten and printed text is accurately captured.
+e Preprocess the image (grayscale, thresholding) to improve OCR accuracy.
+
+2. Identify and Extract Key Data Points
+
+e Extract the following fields:
+o Patient Details: Name, DOB
+o Treatment Details: Date, Injection (Yes/No), Exercise Therapy (Yes/No)
+o Difficulty Ratings (0-5): Bending, Putting on Shoes, Sleeping, etc.
+o Patient Changes:
+= Since last treatment
+= Since the start of treatment
+= Last 3 days (Good/Bad)
+o Pain Symptoms (0-10):
+=® Pain, Numbness, Tingling, Burning, Tigntness
+o Medical Assistant (MA) Inputs:
+
